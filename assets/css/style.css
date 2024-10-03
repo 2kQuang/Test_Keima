@@ -1,0 +1,451 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+ol,
+ul {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 0.5em;
+  border: 1px solid #000;
+}
+
+table th {
+  font-weight: bold;
+}
+
+caption,
+table th,
+table td {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
+  content: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body * {
+  max-height: 99999em;
+  word-break: break-word;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a img {
+  border: none;
+}
+
+input,
+label,
+select,
+button {
+  line-height: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  word-break: normal;
+  vertical-align: middle;
+  white-space: normal;
+  -webkit-appearance: none;
+}
+
+button {
+  color: inherit;
+}
+
+textarea {
+  overflow: auto;
+  line-height: 1.5;
+  white-space: pre-line;
+  resize: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+@media print, (min-width: 768.02px) {
+  html {
+    font-size: 625%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    min-height: 100vh;
+    font-size: 26.6666666667vw;
+  }
+}
+
+body {
+  word-break: break-word;
+}
+@media print, (min-width: 768.02px) {
+  body {
+    font-size: 0.16rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.14rem;
+  }
+}
+
+@media print, (min-width: 768.02px) {
+  .container {
+    max-width: unset;
+    min-width: 1260px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+@media print, (min-width: 768.02px) {
+  .wrapper {
+    width: calc(100% - 60px);
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+  }
+}
+
+.image-common {
+  display: block;
+  width: 100%;
+}
+
+.object-common {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-top-product {
+  padding: 0.5rem 0;
+}
+
+.list-top-product .list-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.list-top-product .item-list {
+  border: solid 1px #ccc;
+  position: relative;
+}
+.list-top-product .item-promotion {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: orange;
+  padding: 5px 7px;
+  color: #fff;
+}
+.list-top-product .item-promotion::before {
+  position: absolute;
+  content: "";
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  border-top: 0.27rem solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 0.1rem solid orange;
+}
+@media only screen and (max-width: 768px) {
+  .list-top-product .item-promotion::before {
+    display: none;
+  }
+}
+.list-top-product .item-information {
+  padding: 0.1rem 0.2rem;
+}
+.list-top-product .block-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.1rem;
+  margin-bottom: 0.15rem;
+}
+.list-top-product .item-text {
+  padding: 0.05rem 0.1rem;
+  background-color: grey;
+  color: #fff;
+}
+.list-top-product .item-text.is-green {
+  background-color: green;
+}
+.list-top-product .name-information {
+  border-bottom: solid 1px #000;
+  padding-bottom: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+.list-top-product .detail-infomation {
+  margin-bottom: 0.15rem;
+}
+.list-top-product .controller-information {
+  display: flex;
+  justify-content: flex-end;
+}
+@media print, (min-width: 768.02px) {
+  .list-top-product .list-wrapper {
+    gap: 0.2rem;
+  }
+  .list-top-product .item-list {
+    width: calc((100% - 60px) / 4);
+  }
+  .list-top-product .item-text,
+  .list-top-product .name-information {
+    font-size: 0.16rem;
+  }
+  .list-top-product .detail-infomation {
+    font-size: 0.18rem;
+    font-weight: bold;
+  }
+}
+@media print, (min-width: 768.02px) and (max-width: 1024px) {
+  .list-top-product .list-wrapper {
+    gap: 0.2rem;
+  }
+  .list-top-product .item-list {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .list-top-product .item-list {
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+  .list-top-product .item-list:last-child {
+    margin-bottom: 0;
+  }
+  .list-top-product .item-text,
+  .list-top-product .name-information {
+    font-size: 0.14rem;
+  }
+  .list-top-product .detail-infomation {
+    font-size: 0.16rem;
+  }
+}
+
+.button-top-primary {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
